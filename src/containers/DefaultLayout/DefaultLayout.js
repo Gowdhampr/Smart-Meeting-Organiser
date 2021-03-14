@@ -4,10 +4,14 @@ import { Route, Switch } from "react-router-dom";
 // routes config
 import routes from "../../routes";
 
+// Component
+import Navbar from "../../components/Core/Header/NavBar"
+
 export default function DefaultLayout() {
   return (
     <div className="app">
       <div className="app-body">
+        <Navbar />
         <main className="container">
           <Suspense>
             <Switch>
